@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="maVideo" autoplay controls>
+        <source src="RO3.mp4" type="video/mp4">
+      </video>
+    
+      <button onclick="pauseVideo()">Pause</button>
+      <style>
+        video{
+            width: 600px;
+            height: 500px;
+            margin: 0;
+            margin-left: 16rem;
+        }
+      </style>
+    
+      <script>
+        function pauseVideo() {
+          var video = document.getElementById('maVideo');
+          video.pause(); 
+        }
+      </script>
+</body>
+</html>
